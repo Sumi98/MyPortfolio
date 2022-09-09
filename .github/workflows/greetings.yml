@@ -15,7 +15,15 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "Message that will be displayed on users' first issue"
         pr-message: "Message that will be displayed on users' first pull request"
-        
+  lint:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    
     - name: Super-Linter
-      uses: github/super-linter@v4.9.5
+      uses: github/super-linter@v3.15.5
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
