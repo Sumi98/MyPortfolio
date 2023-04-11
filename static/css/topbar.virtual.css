@@ -512,14 +512,14 @@
   border-color: #EF3724;
 }
 
-.theme-red .timeline li:first-child .title {
+/* .theme-red .timeline li:first-child .title {
   background-color: #EF3724;
 }
 
 .theme-red .timeline li:first-child::before {
   background-color: #EF3724;
   box-shadow: 0 0 0 2px #EF3724;
-}
+} */
 
 /* Theme Blue */
 .theme-blue .badge-subhead  {
